@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Font Awesome Icon -->
+        <script src="https://kit.fontawesome.com/6b80f4ef79.js" crossorigin="anonymous"></script>
+        
+        <title> Emanon Portfolio</title>
+        <style>
+        #header {
+          background-color: #f9f9ff;
+        }
+        .banner-left h1 {
+    margin: 20px 0;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins",sans-serif;
+    color: #222;
+    line-height: 1.2em!important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+        body {
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    position: relative;
+}
+
+        .home-about-area {
+          -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    text-align: left;
+    color: #777;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    box-sizing: border-box;
+    display: block;
+    padding-top: 120px;
+        }
+        .primary-btn {
+    background: #8490ff;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    position: relative;
+    background: -webkit-linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.single-services {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.section-gap {
+    padding: 120px 0;
+}
+
+.single-services:hover h4 {
+  color: #8490ff;
+}
+
+.single-services:hover .fa-solid {
+  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    background-clip: border-box;
+  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.single-services .fa-solid {
+  font-size: 35px;
+  color: #222;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+
+.single-services h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.h4 {
+    font-size: 18px;
+}
+
+/* .mb-10 {
+  font-size: 35px !important;;
+  color: #222 !important;
+} */
+        
+
+.section-gap {
+  padding: 120px 0;
+}
+
+.facts-area
+{
+  background: -moz-linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+  background: -webkit-linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+  background: -ms-linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+  text-align: center;
+  
+}
+
+.single-fact h1 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.single-fact h1, .single-fact p {
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.facts-area .counter {
+  margin-bottom: 0px;
+}
+
+
+   
+
+        </style>
+    </head>
+
+  <body>
+          <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-white bg-white py-3 shadow-sm fixed-top"> 
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/Logo.png" alt=""> HardCoder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item px-3">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                </li>
+          </ul>
+           
+          <form class="d-flex px-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> 
+        
+
+
+
+    <Section id="header" class="pt-5">
+        <div class="container background-color">
+          <div class="row fullscreen align-items-center justify-content-between">
+            <div class="col-lg-6 col-md-6 banner-left">
+              <h6>That is not me --></h6>
+              <h1>Emanon Campo</h1>
+              <p>
+                “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler 
+              </p>
+              <a href="#" class="primary-btn text-uppercase">discover now</a>
+              </div>
+              <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
+              <img class="img-fluid" src="img/hero-img_png.png" alt="">
+            </div>
+          </div>
+        </div>
+    </Section>  
+
+    <section class="home-about-area ">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6 col-md-6 home-about-left">
+            <img class="img-fluid" src="img/about-img_png.png" alt="" data-pagespeed-url-hash="2947992054" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            </div>
+            <div class="col-lg-5 col-md-6 home-about-right">
+            <h6>About Me</h6>
+            <h1 class="text-uppercase">Personal Details</h1>
+            <p>
+             I am currently working as a Virtual Assistant in Real Estate Company of New Jersey and Admin Assistant of a Real Investor Company in Miami. I have 2 Bachelor Degree BS in Industrial Techonology Major in Electronics and BS in Marine Engineering. I have two years experience as Field Engineer of IBM (Third Party) Setting Up and Configuring Bank Servers . I have 4+ years experience as a Marine Engineer - Maintaning , monitoring and Troubleshooting Ships Machinery and Computer System. I have 3+ years of exprience as a Real Estate VA-Social Media Manager-Data Researcher-Graphic Designer that provides professional administrative, technical, or creative (social) assistance to clients.
+            </p>
+            <a href="#" class="primary-btn text-uppercase">View Full Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+        
+    <section class="services-area section-gap">
+      <div class="container">
+      <div class="row d-flex justify-content-center">
+      <div class="menu-content  col-lg-7">
+      <div class="title text-center">
+      <h1 class="mb-10 fw-bolder"> My Offered Services </h1>
+      <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+      </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-lg-4 col-md-6">
+      <div class="single-services">
+        <i class="fa-solid fa-pen-fancy"></i>
+      <a href="#"><h4>Web Design</h4></a>
+      <p>
+      “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
+      </p>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+      <div class="single-services">
+        <i class="fa-solid fa-laptop-code"></i>
+      <a href="#"><h4>Web Development</h4></a>
+      <p>
+      If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
+      </p>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+      <div class="single-services">
+        <i class="fa-solid fa-camera"></i>
+      <a href="#"><h4>Photography</h4></a>
+      <p>
+      Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
+      </p>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+      <div class="single-services">
+        <i class="fa-solid fa-image"></i>
+      <a href="#"><h4>Clipping Path</h4></a>
+      <p>
+      Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
+      </p>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+      <div class="single-services">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+      <a href="#"><h4>Apps Interface</h4></a>
+      <p>
+      Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
+      </p>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+      <div class="single-services">
+        <i class="fa-solid fa-rocket"></i>
+      <a href="#"><h4>Graphic Design</h4></a>
+      <p>
+      You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
+      </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+
+
+      <section class="facts-area section-gap" id="facts-area">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-3 col-md-6 single-fact">
+        <h1 class="counter">2536</h1>
+        <p>Projects Completed</p>
+        </div>
+        <div class="col-lg-3 col-md-6 single-fact">
+        <h1 class="counter">6784</h1>
+        <p>Happy Clients</p>
+        </div>
+        <div class="col-lg-3 col-md-6 single-fact">
+        <h1 class="counter">2239</h1>
+        <p>Cups of Coffee</p>
+        </div>
+        <div class="col-lg-3 col-md-6 single-fact">
+        <h1 class="counter">434</h1>
+        <p>Real Professionals</p>
+        </div>
+        </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
